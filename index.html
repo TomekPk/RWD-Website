@@ -15,129 +15,68 @@
 
 
   <style>
+  @media only screen and (max-width: 768px) {
+    .parallax-1 {
+      min-height: 70%;
+    }
+      /* For mobile phones: */
+    .absolute_box_cell {
+      background-color:  ;
+      width:auto;
+      height: 20%;
+      color: black;
+      text-align: center;
+      display: block;
+      padding: 1%;
+    }
+    .box {
+      border: 1px solid black;
+      max-height: 1%;
+      width: 100%;
+      height: auto;
+      color: black;
+      border-left: 1px solid black;
+      border-radius: 15px 5px;
+      background-color: grey;
+      opacity: 1;
+      padding: 5%;
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
+      box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
+      font-size: 2vw;
 
-  body, html {
-    height: 100%;
-    margin: 0px;
 
+    }
+    .logo_letters {
+      background-color: darkgrey;
+      display: table-cell;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      right: 10px;
+      border: 4px solid darkblue;
+      border-radius: 100%;
+      margin: auto;
+      -webkit-box-shadow: inset -2px -2px 5px 0px rgba(0,0,0,0.11);
+      -moz-box-shadow: inset -2px -2px 5px 0px rgba(0,0,0,0.11);
+      box-shadow: inset -2px -2px 5px 0px rgba(0,0,0,0.11);
+
+
+    }
+
+    /* SHOW div as a table-cell when screen size change */
+    .as_table {
+      display: table-cell;
+
+
+    }
+    .as_table_left {
+      width:70px;
+      height:50px;
+      position:relative;
+      display: table-cell;
   }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  div p {
-    margin:0;
-    position: relative;
-    top:0;
-    bottom: 10px;
-
-  }
-
-
-  .parallax-1, .parallax-2, .parallax-3 {
-    position: relative;
-    opacity: 0.9;
-    background-attachment: fixed; /* fixed */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
-
-
-  .parallax-1 {
-    background-image: url("images/parallax1.jpg");
-    min-height: 100%;
-
-
-  }
-
-  .parallax-2 {
-    background-image: url("images/parallax2.jpg");
-    min-height: 300px;
-  }
-
-  .parallax-3 {
-    background-image: url("images/parallax3.jpg");
-    min-height: 70%;
-  }
-
-  .truck_line {
-    position: absolute;
-    background-color: ;
-    bottom: -150%;
-    max-width: 180px;
-    bottom: -25px;
-    z-index: -1;
-
-  }
-
-  .information_center {
-    position:relative;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color:black;
-    z-index:1;
-  }
-
-  .information_text {
-    padding: 16px;
-    border-color: red;
-    letter-spacing: 8px;
-    background-color: green;
-  }
-
-  .absolute_box {
-    height: 100%;
-    background-color:  ;
-    position: relative;
-    top:50px;
-    height: auto;
-    color: black;
-    text-align: center;
-    padding-left: 4%;
-    padding-right: 4%;
-    display: table;
-  }
-
-  .absolute_box_cell {
-    background-color:  ;
-    width: 33%;
-    height: 10%;
-    color: black;
-    text-align: center;
-    display: table-cell;
-    padding: 1%;
-
-
-  }
-
-  .box {
-    border: 1px solid black;
-    height: 100%;
-    width: 70%;
-    color: black;
-    border-left: 1px solid black;
-    border-radius: 15px 5px;
-    background-color: grey;
-    opacity: 1;
-    padding: 5%;
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
-    font-size: 1vw;
-  }
-
-  .box:hover {
-    color:white;
-    cursor: help;
-
-
-  }
-
+}
 
   </style>
 
@@ -149,39 +88,82 @@
   <div class="parallax-1">
     <div class="absolute_box">
       <div class="absolute_box_cell">
-          <div class="absolute_box_cell">
+        <div class="absolute_box_cell">
+          <div class="box">
 
-            <div class="box">
-              <a href="something.html">
-              <div>
+              <div class="as_table">
+                <div class="as_table_left">
+                  <div class="logo_letters">
+                    <div>
+                      asd
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="as_table" style="text-align:left;">
+
                 asdasd as dasd asda sda sasd
                 asd asd asd asd asdas asd asd
                 asd asd asd asd asd asd
-                <img style="height:auto; width:100%;" src="images/truck-mini.png" />
-              </div></a>
-          </div>
+              </div>
+
         </div>
-        <div class="absolute_box_cell">
-          <div class="box">
-            sd sad as asd as dasd asd a
-              sd sad as asd as dasd asd a
-                sd sad as asd as dasd asd asd a
-                <img style="height:auto; width:100%;" src="images/white-truck.png" />
+      </div>
+      <div class="absolute_box_cell">
+        <div class="box">
+
+            <div class="as_table">
+              <div class="as_table_left">
+                <div class="logo_letters">
+                  <div>
+                    as
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="as_table" style="text-align:left;">
+
+              asdasd as dasd asda sda sasd
+              asd asd asd asd asdas asd asd
+              asd asd asd asd asd asd
+            </div>
+
+      </div>
+    </div>
+    <div class="absolute_box_cell">
+      <div class="box">
+
+          <div class="as_table">
+            <div class="as_table_left">
+              <div class="logo_letters">
+                <div>
+                  as
+
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
-        <div class="absolute_box_cell">
-          <div class="box">
-            sd sad as asd as dasd asd a
-              sd sad as asd as dasd asd a
-                sd sad as asd as dasd asd asd a
+          <div class="as_table" style="text-align:left;">
+
+            asdasd as dasd asda sda sasd
+            asd asd asd asd asdas asd asd
+            asd asd asd asd asd asd
           </div>
-        </div>
+
+    </div>
+  </div>
+    </div>
 
     </div>
   </div>
 </div>
 
-<div style="background-color: yellow;">
+<div class="content1">
 
 
   <div style="background-color:; color:yellow;margin-bottom: 0px;">
