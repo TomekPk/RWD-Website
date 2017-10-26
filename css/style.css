@@ -73,7 +73,8 @@
     padding: 16px;
     border-color: red;
     letter-spacing: 8px;
-    background-color: green;
+    background-color: #222;
+    color:#a5a5a5;
 
   }
 
@@ -158,12 +159,23 @@
     margin: auto;
   }
 
+.content1, .content2, .content3 {
+  background-attachment: local;
+  -webkit-box-shadow: 0px 0px 31px 25px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 31px 25px rgba(0,0,0,1);
+  box-shadow: 0px 0px 31px 25px rgba(0,0,0,1);
+  background-position: center;
+  background-size: cover;
+}
+
   .content1 {
     background-image: url("../images/content1.jpg");
-    background-attachment: local;
-    -webkit-box-shadow: 0px 0px 31px 25px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 31px 25px rgba(0,0,0,1);
-    box-shadow: 0px 0px 31px 25px rgba(0,0,0,1);
-    background-position: center;
-    background-size: cover;
+  }
+
+  .content2 {
+    background-image: url("../images/content2.jpg");
+  }
+
+  .content3 {
+    background-image: url("../images/content3.jpg");
   }

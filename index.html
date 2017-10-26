@@ -17,7 +17,7 @@
   <style>
   @media only screen and (max-width: 768px) {
     .parallax-1 {
-      min-height: 70%;
+      min-height: 85%;
     }
       /* For mobile phones: */
     .absolute_box_cell {
@@ -78,10 +78,47 @@
   }
 }
 
+.navbar-zero-bottom {
+    margin-bottom: 0px;
+  }
+
+  .navbar-inverse .navbar-brand {
+      color: #0600ff;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 15px 20px;
+  }
+
+
   </style>
 
 </head>
 <body>
+
+  <nav class="navbar navbar-inverse navbar-static-top navbar-zero-bottom" role="navigation">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class = "navbar-brand" href = "index.html">LuxTrans</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.php">Home</a></li>
+                  <li><a href="about.php">About</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="contact.php">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 
 <!-- USE GRID instead of table-cell -->
 
@@ -190,10 +227,11 @@
     </div>
 </div>
 
+
   <div class="parallax-2">
 
   </div>
-  <div>
+  <div class="content2">
     <div class="information_center">
       <span class="information_text">
        Information text 2
@@ -212,7 +250,7 @@
 
   </div>
 
-  <div style="background-color:black; color:yellow; height:auto;">
+  <div class="content3">
 
     <div class="information_center">
       <div class="truck_line">
@@ -222,7 +260,7 @@
        Information text 3
      </span>
     </div>
-    <h1>CONTENT3</h1>
+    <h1>CONTENT43</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum interdum commodo. Fusce blandit rutrum odio, id mollis elit ornare non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed risus elit, cursus at lorem sit amet, porttitor commodo dui. Vivamus imperdiet justo sollicitudin, consequat enim non, molestie nulla. Quisque scelerisque venenatis sem, eu maximus quam. Sed dictum elit nunc, at ullamcorper massa faucibus ut. Nam non leo eleifend, rutrum nisl nec, mattis lorem. Nunc quis rhoncus sapien. In ultricies, lorem nec facilisis vulputate, sapien metus placerat tellus, tempor accumsan sem ante a ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam finibus porttitor dolor.
 
