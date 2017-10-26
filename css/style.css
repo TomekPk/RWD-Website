@@ -16,11 +16,13 @@
     bottom: 10px;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 100%;
     font-family: 'Alegreya Sans SC', sans-serif;
 
   }
 
+.font-size {
+  font-size: 25px;
+}
 
   .parallax-1, .parallax-2, .parallax-3 {
     position: relative;
@@ -79,7 +81,7 @@
     border-color: red;
     letter-spacing: 8px;
     background-color: #222;
-    color:#8888ef;
+    color:#2020f8;
 
   }
 
