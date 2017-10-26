@@ -10,6 +10,7 @@
   in different style sheets, the value from the last read style sheet will be used. -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
@@ -17,66 +18,70 @@
   <style>
   @media only screen and (max-width: 768px) {
     .parallax-1 {
-      min-height: 85%;
+      min-height: 100%;
     }
       /* For mobile phones: */
+
+      .absolute_box_cell_main {
+        background-color:  ;
+        margin: 0 auto;
+
+
+
+      }
+
     .absolute_box_cell {
       background-color:  ;
-      width:auto;
-      height: 20%;
+      width:100%;
+      height: 100%;
       color: black;
       text-align: center;
       display: block;
-      padding: 1%;
+      padding: 0.5%;
+      display:block;
+    }
+
+    .absolute_box {
+      vertical-align: middle;
+      width: 100%;
     }
     .box {
-      border: 1px solid black;
-      max-height: 1%;
+      vertical-align: middle;
+
+      background-color: grey;
+      border: 10px solid blue;
+      height: 100%;
       width: 100%;
-      height: auto;
       color: black;
       border-left: 1px solid black;
-      border-radius: 15px 5px;
-      background-color: grey;
-      opacity: 1;
-      padding: 5%;
+      border-right: 1px solid black;
+      border-radius: 10px 10px;
+      opacity: 0.9;
+      padding: 2%;
       -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
       -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
       box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
-      font-size: 2vw;
 
 
     }
-    .logo_letters {
-      background-color: darkgrey;
-      display: table-cell;
-      position: relative;
-      width: 50px;
-      height: 50px;
-      right: 10px;
-      border: 4px solid darkblue;
-      border-radius: 100%;
-      margin: auto;
-      -webkit-box-shadow: inset -2px -2px 5px 0px rgba(0,0,0,0.11);
-      -moz-box-shadow: inset -2px -2px 5px 0px rgba(0,0,0,0.11);
-      box-shadow: inset -2px -2px 5px 0px rgba(0,0,0,0.11);
 
-
-    }
 
     /* SHOW div as a table-cell when screen size change */
     .as_table {
       display: table-cell;
+      width: auto;
 
 
     }
     .as_table_left {
-      width:70px;
-      height:50px;
-      position:relative;
-      display: table-cell;
+      width:100%;
+      height:10%;
+
+      margin:auto
+
   }
 }
+/* END mobile phones */
 
 .navbar-zero-bottom {
     margin-bottom: 0px;
@@ -124,41 +129,17 @@
 
   <div class="parallax-1">
     <div class="absolute_box">
-      <div class="absolute_box_cell">
+      <div class="absolute_box_cell_main">
         <div class="absolute_box_cell">
           <div class="box">
-
-              <div class="as_table">
-                <div class="as_table_left">
-                  <div class="logo_letters">
-                    <div>
-                      asd
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="as_table" style="text-align:left;">
-
-                asdasd as dasd asda sda sasd
-                asd asd asd asd asdas asd asd
-                asd asd asd asd asd asd
-              </div>
-
-        </div>
-      </div>
-      <div class="absolute_box_cell">
-        <div class="box">
-
             <div class="as_table">
               <div class="as_table_left">
-                <div class="logo_letters">
+
                   <div>
-                    as
+                    OBRAZ
+
 
                   </div>
-                </div>
               </div>
 
             </div>
@@ -169,19 +150,18 @@
               asd asd asd asd asd asd
             </div>
 
+        </div>
       </div>
-    </div>
-    <div class="absolute_box_cell">
-      <div class="box">
-
+      <div class="absolute_box_cell">
+        <div class="box">
           <div class="as_table">
             <div class="as_table_left">
-              <div class="logo_letters">
+
                 <div>
-                  as
+                  OBRAZ
+
 
                 </div>
-              </div>
             </div>
 
           </div>
@@ -191,6 +171,28 @@
             asd asd asd asd asdas asd asd
             asd asd asd asd asd asd
           </div>
+
+      </div>
+    </div>
+    <div class="absolute_box_cell">
+      <div class="box">
+        <div class="as_table">
+          <div class="as_table_left">
+
+              <div>
+                OBRAZ
+
+
+              </div>
+          </div>
+
+        </div>
+        <div class="as_table" style="text-align:left;">
+
+          asdasd as dasd asda sda sasd
+          asd asd asd asd asdas asd asd
+          asd asd asd asd asd asd
+        </div>
 
     </div>
   </div>
@@ -214,13 +216,27 @@
     </div>
 
 
-    <div style="background-color: ;margin-left:50px; height: auto;">
-      <h1 style="margin-top:40px;">blasA ASD ASD ASD ASD AS DASD ASD ASD ASD AS DAS DA SDASD ASD AS DAS DAS DDASudasd</h1>
+    <div style="background-color: ; height: auto;">
+      <h4 style="margin-top:40px;">
       <p>
-        asdasdasdasd<br />
-        asdasd<br />
-      
-      </p>
+        W celu poprawy bezpieczeństwa wprowadzamy wewnętrzne procedury, które tworzą Standardy
+        Bezpieczeństwa Naszej Firmy na drodze. Obowiązują one wszystkich pracowników, którzy
+        wykorzystują jakikolwiek pojazd dla celów
+        działalności firmy. Zapewnienie bezpieczeństwa transportu drogowego w naszej firmie jest
+        zagadnieniem kluczowym. Przywiązujemy dużą wagę do jakości pracy kierowców i ich kultury
+        osobistej, dlatego poprzez cykliczne szkolenia stale podnosimy poziom ich wiedzy i fachowości.
+
+      </p><br />
+    </h4>
+    <p> Nasza firma posiada aktualne ubezpieczenia:</p>
+      <p>- Ubezpieczenie OC przewoźnika w transporcie krajowym/międzynarodowym.</p>
+      <p>- Ubezpieczenie mienia w transporcie krajowym (CARGO) oraz międzynarodowym (CARGO ICC)</p>
+      <p>- Ubezpieczenie OC spedytora</p>
+
+
+
+
+
 
     </div>
 </div>
@@ -232,15 +248,23 @@
   <div class="content2">
     <div class="information_center">
       <span class="information_text">
-       WYGODA
+       WYGODA i JAKOŚĆ
      </span>
     </div>
 
-    <h1>WYGODA</h1>
+    <h4>Coś</h4>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum interdum commodo. Fusce blandit rutrum odio, id mollis elit ornare non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed risus elit, cursus at lorem sit amet, porttitor commodo dui. Vivamus imperdiet justo sollicitudin, consequat enim non, molestie nulla. Quisque scelerisque venenatis sem, eu maximus quam. Sed dictum elit nunc, at ullamcorper massa faucibus ut. Nam non leo eleifend, rutrum nisl nec, mattis lorem. Nunc quis rhoncus sapien. In ultricies, lorem nec facilisis vulputate, sapien metus placerat tellus, tempor accumsan sem ante a ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam finibus porttitor dolor.
-
-      Maecenas quis lorem a elit laoreet finibus. Suspendisse eu dolor posuere, tristique ipsum quis, commodo urna. Fusce sodales mi ut aliquam efficitur. Fusce in nisl ante. Maecenas et elit quis mi egestas facilisis rhoncus et mauris. Nullam accumsan, odio nec ultrices molestie, magna tortor gravida orci, vel dictum tellus tellus et lectus. Vestibulum auctor augue velit, at placerat mi scelerisque at. Praesent pretium vehicula dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis eros neque, sed iaculis eros tristique nec. Nullam placerat dui quis lectus rutrum, a porttitor diam ultricies.
+      Nasza spolka zajmuje się krajowym i międzynarodowym transportem gazu propan-butan, paliw płynnych,
+       chemii oraz płynnych artykułów spożywczych cysternami wyposażonymi w nowoczesne systemy
+       rozładunkowe. Ponadto specjalizujemy się w transporcie gazów technicznych w zbiornikach
+       ciśnieniowych. Naszą domeną działania jest specjalistyczny krajowy i międzynarodowy transport
+        materiałów niebezpiecznych (ADR). W tym zakresie jesteśmy ekspertami i gwarantujemy naszym
+        Klientom najwyższą jakość  przewozu, oraz bezpieczeństwo powierzonego towaru.
+        Posiadany nowoczesny tabor i wysoko wykwalifikowana kadra jest w stanie sprostać wymaganiom
+        naszych Klientów.
+      Wysoka jakość usług oraz terminowość sprawiają, że zaufało nam już wielu klientów.
+      Oferujemy szeroko zakres usług: transport drogowy, transport chłodniczy, transport krajowy oraz
+      międzynarodowy
     </p>
   </div>
 
@@ -260,9 +284,15 @@
     </div>
     <h1>asdasd</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum interdum commodo. Fusce blandit rutrum odio, id mollis elit ornare non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed risus elit, cursus at lorem sit amet, porttitor commodo dui. Vivamus imperdiet justo sollicitudin, consequat enim non, molestie nulla. Quisque scelerisque venenatis sem, eu maximus quam. Sed dictum elit nunc, at ullamcorper massa faucibus ut. Nam non leo eleifend, rutrum nisl nec, mattis lorem. Nunc quis rhoncus sapien. In ultricies, lorem nec facilisis vulputate, sapien metus placerat tellus, tempor accumsan sem ante a ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam finibus porttitor dolor.
-
-      Maecenas quis lorem a elit laoreet finibus. Suspendisse eu dolor posuere, tristique ipsum quis, commodo urna. Fusce sodales mi ut aliquam efficitur. Fusce in nisl ante. Maecenas et elit quis mi egestas facilisis rhoncus et mauris. Nullam accumsan, odio nec ultrices molestie, magna tortor gravida orci, vel dictum tellus tellus et lectus. Vestibulum auctor augue velit, at placerat mi scelerisque at. Praesent pretium vehicula dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis eros neque, sed iaculis eros tristique nec. Nullam placerat dui quis lectus rutrum, a porttitor diam ultricies.
+      W transporcie drogowym, na znaczeniu zyskują systemy, pozwalające informować poruszających się
+      pojazdami o wszelkich zdarzeniach i utrudnieniach na drodze mających wpływ na bezpieczeństwo jazdy.
+       Systemy te informują również o złych warunkach pogodowych, a generowane komunikaty, podróżujący
+       mogą odczytać w czasie rzeczywistym za pomocą elektronicznych tablic rozmieszczonych na wielu
+        trasach. Takie systemy, choć pozornie proste, kryją w sobie szereg algorytmów służących
+         gromadzeniu, analizowaniu i przekazywaniu danych. „Jeden z nich już niedługo będzie
+         udostępniał informacje o sytuacji na drogach podróżującym drogami ekspresowymi i autostradami
+          należącymi do transeuropejskiej sieci transportowej (TEN-T). Przygotujemy go na zlecenie 
+          Generalnej Dyrekcji Dróg Krajowych i Autostrad.
     </p>
   </div>
 

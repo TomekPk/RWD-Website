@@ -14,6 +14,10 @@
     position: relative;
     top:0;
     bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 100%;
+    font-family: 'Alegreya Sans SC', sans-serif;
 
   }
 
@@ -25,6 +29,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin:auto;
 
 
   }
@@ -53,10 +58,10 @@
   .truck_line {
     position: absolute;
     background-color: ;
-    bottom: -150%;
-    max-width: 180px;
-    bottom: -25px;
-    z-index: -1;
+    max-width: 10%;
+    min-width: 70px;
+    bottom: 0px;
+    z-index: 1;
 
   }
 
@@ -74,33 +79,45 @@
     border-color: red;
     letter-spacing: 8px;
     background-color: #222;
-    color:#a5a5a5;
+    color:#8888ef;
 
   }
 
   .absolute_box {
-    height: 100%;
-    background-color:  ;
-    position: relative;; /* relative */
-
-
-    top:50px;
+    vertical-align: middle;
+    background-color:;
     height: auto;
+    background-color:  ;
+    position: absolute;; /* relative */
+    top:10%;
     color: black;
     text-align: center;
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 5%;
     display:block;
+    padding: 0%;
+    margin:auto;
+  }
+
+  .absolute_box_cell_main {
+    background-color: ;
+    margin:auto;
+
+
+
   }
 
   .absolute_box_cell {
     background-color:  ;
     width: 33%;
-    height: auto;
     color: black;
     text-align: center;
     display: table-cell;
-    padding: 1%;
+    padding: 0%;
+    margin: 0 auto;
+    height: 100px;
+    vertical-align: bottom;
 
 
   }
@@ -112,23 +129,22 @@
 
 
   .box {
-    background-color: grey;
-    border: 1px solid black;
+    margin: 0 auto;
+    background-color: #b4b4b4;
+    border: 10px solid blue;
     height: 100%;
-    width: 90%;
+    width: 80%;
     color: black;
     border-left: 1px solid black;
-    border-radius: 15px 5px;
-    opacity: 0.8;
-    padding: 5%;
+    border-right: 1px solid black;
+    border-radius: 10px 10px;
+    opacity: 0.9;
+    padding: 0%;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
+}
 
-
-
-
-  }
 
   .box:hover {
     color:white;
@@ -139,6 +155,8 @@
 
   .as_table {
     display: block;
+    width: 100%;
+
 
   }
   .as_table_left {
@@ -149,14 +167,12 @@
     margin:auto;
   }
 
-  .logo_letters {
-    position: relative;
-    background-color: darkgrey;
-    height: 100%;
-    width: 100%   ;
-    border: 10px solid darkblue;
-    border-radius: 100%;
-    margin: auto;
+
+
+  /* For <p> in contents */
+  .content2 p, .content1 p, .content3 p {
+    color:rgba(255, 255, 255, 0.95);
+    font-size: 90%;
   }
 
 .content1, .content2, .content3 {
@@ -166,6 +182,9 @@
   box-shadow: 0px 0px 31px 25px rgba(0,0,0,1);
   background-position: center;
   background-size: cover;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
 }
 
   .content1 {
