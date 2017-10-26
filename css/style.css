@@ -41,13 +41,13 @@
 
   .parallax-2 {
     background-image: url("../images/parallax2.jpg");
-    min-height: 70%;
+    min-height: 40%;
 
   }
 
   .parallax-3 {
     background-image: url("../images/parallax3.jpg");
-    min-height: 70%;
+    min-height: 40%;
   }
 
   .truck_line {
