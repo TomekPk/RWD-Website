@@ -1,4 +1,5 @@
 
+
   body, html {
     height: 100%;
     margin: 0px;
@@ -21,6 +22,29 @@
 
   }
 
+  .start_information {
+    background-color: black;
+    border: 0px solid blue;
+    height: 80%;
+    position: fixed;
+    z-index: 9000;
+    margin:left;
+    top: 10%;
+    opacity: 0.9;
+    border-radius: 0px;
+    color: white;
+    padding: 10%;
+
+  }
+
+  .navbar-inverse {
+      background-color: #00022a;
+    }
+
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #0f1256;
+  }
 
   .parallax-1, .parallax-2, .parallax-3 {
     position: relative;
@@ -31,29 +55,32 @@
     background-size: cover;
     margin:auto;
 
-
   }
-
-
-
 
   .parallax-1 {
     background-image: url("../images/parallax1.jpg");
     min-height: 70%;
-
-
   }
 
   .parallax-2 {
     background-image: url("../images/parallax2.jpg");
     min-height: 40%;
-
   }
 
   .parallax-3 {
     background-image: url("../images/parallax3.jpg");
     min-height: 40%;
   }
+
+.partnerzy {
+  max-height:auto;
+  max-width: 100%;
+  opacity: 0.5;
+}
+
+.partnerzy:hover {
+  opacity: 1;
+}
 
   .truck_line {
     position: absolute;
@@ -76,96 +103,20 @@
 
   .information_text {
     padding: 16px;
-    border-color: red;
+    border-color: ;
     letter-spacing: 8px;
-    background-color: #222;
+    background-color: #0f1256;
     color:#8888ef;
 
-  }
-
-  .absolute_box {
-    vertical-align: middle;
-    background-color:;
-    height: auto;
-    background-color:  ;
-    position: absolute;; /* relative */
-    top:10%;
-    color: black;
-    text-align: center;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 5%;
-    display:block;
-    padding: 0%;
-    margin:auto;
-  }
-
-  .absolute_box_cell_main {
-    background-color: ;
-    margin:auto;
-
-
 
   }
 
-  .absolute_box_cell {
-    background-color:  ;
-    width: 33%;
-    color: black;
-    text-align: center;
-    display: table-cell;
-    padding: 0%;
-    margin: 0 auto;
-    height: 100px;
-    vertical-align: bottom;
-
-
-  }
-
-  .img_in_box {
-    height: auto;
-    width: 100%;
-  }
-
-
-  .box {
-    margin: 0 auto;
-    background-color: #b4b4b4;
-    border: 10px solid blue;
-    height: 100%;
-    width: 80%;
-    color: black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-radius: 10px 10px;
-    opacity: 0.9;
-    padding: 0%;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
-}
-
-
-  .box:hover {
-    color:white;
-    cursor: help;
-    opacity: 1;
-
-  }
-
-  .as_table {
-    display: block;
-    width: 100%;
-
-
-  }
-  .as_table_left {
-    width:100px;
-    height:100px;
-    position:relative;
-    display:block;
-    margin:auto;
-  }
+/* Nav change color on hoover*/
+  .nav>li:hover {
+      position: relative;
+      display: block;
+      background-color: #0f1256;
+    }
 
 
 
@@ -197,4 +148,19 @@
 
   .content3 {
     background-image: url("../images/content3.jpg");
+  }
+
+  .footer {
+    height: 50px;
+    width: 100%;
+    background-color: #00022a;
+    margin: auto;
+  }
+
+  .footer-font {
+    color: #8888ef;
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding-top: 10px;
   }

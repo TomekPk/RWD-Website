@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My RWD-Website</title>
+  <title>Tomasz Parfieniuk FRONT END DEVELOPER</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Tomasz Parfieniuk">
@@ -22,64 +22,7 @@
     }
       /* For mobile phones: */
 
-      .absolute_box_cell_main {
-        background-color:  ;
-        margin: 0 auto;
 
-
-
-      }
-
-    .absolute_box_cell {
-      background-color:  ;
-      width:100%;
-      height: 100%;
-      color: black;
-      text-align: center;
-      display: block;
-      padding: 0.5%;
-      display:block;
-    }
-
-    .absolute_box {
-      vertical-align: middle;
-      width: 100%;
-    }
-    .box {
-      vertical-align: middle;
-
-      background-color: grey;
-      border: 10px solid blue;
-      height: 100%;
-      width: 100%;
-      color: black;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
-      border-radius: 10px 10px;
-      opacity: 0.9;
-      padding: 2%;
-      -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
-      -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
-      box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
-
-
-    }
-
-
-    /* SHOW div as a table-cell when screen size change */
-    .as_table {
-      display: table-cell;
-      width: auto;
-
-
-    }
-    .as_table_left {
-      width:100%;
-      height:10%;
-
-      margin:auto
-
-  }
 }
 /* END mobile phones */
 
@@ -95,10 +38,31 @@
   }
 
 
+
   </style>
 
+<script>
+$(document).ready(function() {
+  $(".start_information").click(function() {
+    $(this).hide('fast');
+    /* Act on the event */
+  });
+});
+
+$(document).ready(function() {
+  $("p").click(function() {
+    $(this).hide('fast');
+    /* Act on the event */
+  });
+});
+</script>
 </head>
 <body>
+  <div class="start_information">
+    <p style="text-align:center; font-size:5vw;">
+      Welcome on my site. Please Click to hide this window.
+    </p>
+  </div>
 
   <nav class="navbar navbar-inverse navbar-static-top navbar-zero-bottom" role="navigation">
       <div class="container-fluid">
@@ -128,79 +92,27 @@
 <!-- USE GRID instead of table-cell -->
 
   <div class="parallax-1">
-    <div class="absolute_box">
-      <div class="absolute_box_cell_main">
-        <div class="absolute_box_cell">
-          <div class="box">
-            <div class="as_table">
-              <div class="as_table_left">
 
-                  <div>
-                    OBRAZ
+    <div class="container-fluid">
 
-
-                  </div>
-              </div>
-
-            </div>
-            <div class="as_table" style="text-align:left;">
-
-              asdasd as dasd asda sda sasd
-              asd asd asd asd asdas asd asd
-              asd asd asd asd asd asd
-            </div>
-
+      <div class="row" style="background-color:#0f1256;">
+        <div class="col-xs-6 col-sm-3">
+          <a href="#"><img class="partnerzy" src="images/partnerzy/partnerzy_01.gif"></a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <a href="#"><img class="partnerzy" src="images/partnerzy/partnerzy_02.gif"></a>
+        </div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-3">
+          <a href="#"><img class="partnerzy" src="images/partnerzy/partnerzy_03.gif"></a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <a href="#"><img class="partnerzy" src="images/partnerzy/partnerzy_04.gif"></a>
         </div>
       </div>
-      <div class="absolute_box_cell">
-        <div class="box">
-          <div class="as_table">
-            <div class="as_table_left">
-
-                <div>
-                  OBRAZ
-
-
-                </div>
-            </div>
-
-          </div>
-          <div class="as_table" style="text-align:left;">
-
-            asdasd as dasd asda sda sasd
-            asd asd asd asd asdas asd asd
-            asd asd asd asd asd asd
-          </div>
-
-      </div>
-    </div>
-    <div class="absolute_box_cell">
-      <div class="box">
-        <div class="as_table">
-          <div class="as_table_left">
-
-              <div>
-                OBRAZ
-
-
-              </div>
-          </div>
-
-        </div>
-        <div class="as_table" style="text-align:left;">
-
-          asdasd as dasd asda sda sasd
-          asd asd asd asd asdas asd asd
-          asd asd asd asd asd asd
-        </div>
-
-    </div>
-  </div>
-    </div>
-
-    </div>
-  </div>
 </div>
+  </div>
+
 
 <div class="content1">
 
@@ -291,11 +203,15 @@
         trasach. Takie systemy, choć pozornie proste, kryją w sobie szereg algorytmów służących
          gromadzeniu, analizowaniu i przekazywaniu danych. „Jeden z nich już niedługo będzie
          udostępniał informacje o sytuacji na drogach podróżującym drogami ekspresowymi i autostradami
-          należącymi do transeuropejskiej sieci transportowej (TEN-T). Przygotujemy go na zlecenie 
+          należącymi do transeuropejskiej sieci transportowej (TEN-T). Przygotujemy go na zlecenie
           Generalnej Dyrekcji Dróg Krajowych i Autostrad.
     </p>
   </div>
+  <div class="footer footer-font">
 
+      Copyright © Tomasz Parfieniuk
+
+  </div>
 
 </body>
 </html>
