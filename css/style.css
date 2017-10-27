@@ -146,6 +146,10 @@
   margin:0;
 }
 
+.content1_list p {
+  margin:0;
+}
+
 .content_txt {
   line-height: 150%;
   font-size: 1.7vw;
@@ -164,7 +168,7 @@
 }
 
 .content1_list {
-  padding: 0;
+  padding: 0px;
   margin: 0px;
   margin-left: 0px;
   list-style-type: none;
@@ -172,26 +176,23 @@
 
 }
 
-.glyphicon,.glyphicon-list-alt {
-  color:white;
-
-
-}
-
 .content1_list a {
   color: white;
   text-decoration: none;
+
+
 }
 
 .content1_list li:hover {
-    color: #959597;
-    text-decoration: none;
+  color: #959597;
+  text-decoration: none;
+  font-size: 110%;
+  margin:0;
+  padding: 0;
   }
 
 
-ul>li>p {
-  margin: 0px;
-}
+
 
 .content1 {
   background-image: url("../images/content1.jpg");
@@ -228,8 +229,6 @@ ul>li>p {
   color:#0600ff ;
 
 
-
-
 }
 
 .company_hr {
@@ -242,8 +241,13 @@ ul>li>p {
   background-color: #0600ff;
 }
 
+.glyphicon-paperclip{
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
 
-.glyphicon, .glyphicon-circle-arrow-right {
+.glyphicon-circle-arrow-right {
   font-size:100% ;
   color: #0600ff;
   opacity: 0.2;
