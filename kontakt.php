@@ -17,16 +17,6 @@
 
   <style>
 
-  .red{
-      color:red;
-      }
-  .form-area
-  {
-    background-color: #FAFAFA;
-  	padding: 10px 40px 60px;
-  	margin: 10px 0px 60px;
-  	border: 1px solid GREY;
-  	}
 
   </style>
 
@@ -41,30 +31,14 @@ $(document).ready(function() {
 
 
 </script>
-<script>
-<!-- Źrodło: https://bootsnipp.com/snippets/featured/simple-contact-form -->
-$(document).ready(function(){
-    $('#characterLeft').text('1000 liter pozostalo');
-    $('#message').keydown(function () {
-        var max = 1000;
-        var len = $(this).val().length;
-        if (len >= max) {
-            $('#characterLeft').text('Wpisano maksymalna ilosc liter.');
-            $('#characterLeft').addClass('red');
-            $('#btnSubmit').addClass('disabled');
-        }
-        else {
-            var ch = max - len;
-            $('#characterLeft').text(ch + ' liter pozostalo');
-            $('#btnSubmit').removeClass('disabled');
-            $('#characterLeft').removeClass('red');
-        }
-    });
-});
 
-</script>
+
 </head>
 <body>
+<?php include('formularz.php'); ?>
+
+
+
   <!-- //Show start_information
   <div class="start_information">
     <p style="text-align:center; font-size:5vw;">
@@ -88,11 +62,11 @@ $(document).ready(function(){
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                  <li ><a href="index.php">Home</a></li>
-                  <li><a href="about.php">About</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                <!-- BUTTONS -->
+                  <li><a href="ofirmie.html">O FIRMIE</a></li>
+                  <li><a href="flota.html">FLOTA</a></li>
+                  <li><a href="galeria.html">GALERIA</a></li>
+                  <li class="active"><a href="kontakt.html">KONTAKT</a></li>
               </ul>
 
           </div>
@@ -104,6 +78,7 @@ $(document).ready(function(){
   <div class="parallax-3">
 
     <div class="container-fluid">
+
       <div class="row row-partnerzy-bottom">
         <div align="center" class="col-xs-6 col-sm-3" style="">
           <a href="#"><img class="partnerzy" src="images/partnerzy/partnerzy_01.gif"></a>
@@ -119,78 +94,101 @@ $(document).ready(function(){
           <a href="#"><img class="partnerzy" src="images/partnerzy/partnerzy_04.gif"></a>
         </div>
       </div>
-</div>
+    </div>
   </div>
 
+  <div class="content4">
+  <div style="  background-color: rgba(0, 0, 0, 0.5); width:100%; padding-left: 10%;
+  padding-right: 10%;">
 
-<div class="content4">
-<div style="  background-color: rgba(0, 0, 0, 0.5); width:100%; padding-left: 10%;
-padding-right: 10%;">
 
+      <div class="information_div">
 
-    <div class="information_div">
+        <div class="information_center">
+          <span class="information_text">
+           KONTAKT
+         </span>
+        </div>
 
-      <div class="information_center">
-        <span class="information_text">
-         KONTAKT
-       </span>
       </div>
 
-    </div>
+
+      <div class="content_txt">
+
+        <!-- Deklaracje php -->
 
 
-    <div class="content_txt">
-
-
-      <div class="container">
-<div class="col-md-10">
-    <div class="form-area">
-        <form role="form">
-        <br style="clear:both">
-            <h3 style="margin-bottom: 25px; text-align: center;">Formularz Kontaktowy</h3>
-    				<div class="form-group">
-  						<input type="text" class="form-control" id="name" name="name" placeholder="Imie lub pseudonim" required>
-  					</div>
-  					<div class="form-group">
-  						<input type="text" class="form-control" id="email" name="email" placeholder="Adres Email" required>
-    					</div>
-  					<div class="form-group">
-  						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Numer kontaktowy" required>
-  					</div>
-  					<div class="form-group">
-  						<input type="text" class="form-control" id="subject" name="subject" placeholder="Temat" required>
-  					</div>
-            <div class="form-group">
-            <textarea class="form-control" type="textarea" id="message" placeholder="Zostaw wiadomość" maxlength="500" rows="7"></textarea>
-                <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+        <form class="form-horizontal" role="form" method="post" action="kontakt.php">
+          <!-- action index.php or index.html for use? -->
+        	<div class="form-group"> <!--  form-groupIts only purpose is to provide margin-bottom-->
+        		<label for="name" class="col-sm-2 control-label">Imię</label>
+        		<div class="col-sm-10">
+        			<input type="text" class="form-control" id="name" name="name" placeholder="Imię i Nazwisko"
+                value="">
+                <?php echo "<p class='text-danger'>$errName</p>";?>
             </div>
+        	</div>
 
-            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">WYŚLIJ</button>
+        	<div class="form-group">
+        		<label for="email" class="col-sm-2 control-label">Twój Email</label>
+        		<div class="col-sm-10">
+        			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com"
+                value="">
+              <?php echo "<p class='text-danger'>$errEmail</p>";?>
+            </div>
+        	</div>
+
+        	<div class="form-group">
+        		<label for="message" class="col-sm-2 control-label">Wiadomość</label>
+        		<div class="col-sm-10">
+        			<textarea class="form-control" rows="10" name="message"></textarea>
+              <?php echo "<p class='text-danger'>$errMessage</p>";?>
+            </div>
+        	</div>
+
+        	<div class="form-group">
+        		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        		<div class="col-sm-10">
+        			<input type="text" class="form-control" id="human" name="human" placeholder="Twoja odpowiedź">
+              <?php echo "<p class='text-danger'>$errHuman</p>";?>
+        		</div>
+        	</div>
+
+        	<div class="form-group">
+        		<div class="col-sm-10 col-sm-offset-2">
+        			<input id="submit" name="submit" type="submit" value="Wyślij" class="btn btn-primary">
+        		</div>
+        	</div>
+
+        	<div class="form-group">
+        		<div class="col-sm-10 col-sm-offset-2">
+        			<!-- Will be used to display an alert to the user-->
+              <?php echo $result; ?>
+        		</div>
+        	</div>
+
         </form>
-    </div>
-</div>
-</div>
-
-    </div>
-</div>
-</div>
 
 
-
-
-
-  <div class="parallax-3">
-
+      </div>
+  </div>
   </div>
 
 
+
+
+
+    <div class="parallax-3">
+
+    </div>
 
   <div class="footer_up">
     <div class="container">
       <div class="row company_info">
         <div class="col-xs-0 col-md-2">
         </div>
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 ">
+          <div class="column_cn">
           <div class="company_name">
             <div>
               LuxTrans
@@ -209,6 +207,7 @@ padding-right: 10%;">
             </p>
           </div>
         </div>
+        </div>
         <div class="col-xs-12 col-md-6">
           <div class="company_map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76608.78054534887!2d23.086026124945494!3d53.12770770645892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc048f41971d%3A0x72317dcc8bf07b2c!2s15-001+Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1509104344218" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
@@ -219,7 +218,7 @@ padding-right: 10%;">
     </div>
   </div>
   <div class="footer_down footer-font">
-    <span style="margin-top:20px;">Copyright © Tomasz Parfieniuk</span>
+    <span style="margin-top:100px;">Copyright © Tomasz Parfieniuk</span>
   </div>
 
 
