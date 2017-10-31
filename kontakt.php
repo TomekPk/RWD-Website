@@ -63,10 +63,10 @@ $(document).ready(function() {
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <!-- BUTTONS -->
-                  <li><a href="ofirmie.html">O FIRMIE</a></li>
-                  <li><a href="flota.html">FLOTA</a></li>
-                  <li><a href="galeria.html">GALERIA</a></li>
-                  <li class="active"><a href="kontakt.html">KONTAKT</a></li>
+                <li><a href="ofirmie.html">O FIRMIE</a></li>
+                <li><a href="flota.html">FLOTA</a></li>
+                <li><a href="$.html">GALERIA</a></li>
+                <li class="active"><a href="kontakt.php">KONTAKT</a></li>
               </ul>
 
           </div>
