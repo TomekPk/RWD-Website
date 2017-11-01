@@ -209,7 +209,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 .img_width_100 {
   width: 100%;
   margin:auto;
-  
+
   padding: 0%;
 }
 
@@ -310,6 +310,24 @@ div.photo_describe {
   }
 
 /* END GALLERY */
+
+/* Kontakt form style */
+.form_alerts{
+  text-shadow: none;
+  font-size: 14px;
+  margin: auto;
+  line-height: 110%;
+  color: rgba(255,255,255, 0.7);
+  margin-bottom: 1%;
+}
+.form_alerts_red{
+  text-shadow: none;
+  font-size: 14px;
+  margin: auto;
+  line-height: 100%;
+  color: rgb(255, 1, 1);
+}
+/* END kontakt form style */
 
 .content1, .content2, .content3, .content4 {
   background-attachment: fixed; /*slide effect */
